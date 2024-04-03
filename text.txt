@@ -1,0 +1,16 @@
+##To create entity
+ symfony console make:entity Movie
+
+
+##To create migration file	
+ symfony console make:migration
+ symfony doctrine:migrations:migrate
+ 
+ composer require --dev doctrine/doctrine-fixtures-bundle
+  
+ symfony console doctrine:fixtures:load
+ 
+ ##To create form using symfony
+ symfony console make:form StudentFormType Student
+ 
+ https://stackoverflow.com/questions/55380070/how-do-i-add-a-proper-doctrine-query-builder-and-join-a-table	
